@@ -28,15 +28,13 @@ ipython = "*"
 ipykernel = "*"
 jupyterlab = "*"
 pip = "*"
-pytorch-cuda = "==12.4"
 
 
 [pypi-dependencies]
 damply = ">=0.10.0, <0.11"
-MedSAM2 = { path = "workflow/scripts/medsam2_runner/MedSAM2", editable = true, extras = ["dev"] }
-simpleitk = ">=2.5.2, <3"
-pydantic = ">=2.11.7, <3"
-scikit-image = ">=0.25.2, <0.26"
+seaborn = ">=0.13.2, <0.14"
+statsmodels = ">=0.14.5, <0.15"
+tabulate = ">=0.9.0, <0.10"
 
 [tasks]
 example_script = {cmd="python $SCRIPTS/example_script.py", description="Run an example script"}
